@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Samruddhi Developers</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+	<style>
+		body {
+			background-color: #fdffef;
+			text-align: center;
+		}
+		.navbar {
+			background-color: #fdffef;
+			border-bottom: 2px solid #000;
+		}
+		.sticky-top {
+			position: sticky;
+			top: 0;
+			z-index: 1020;
+		}
+
+		.our-service-sec{
+			max-height: 400px;
+			max-width: 400px;
+		}
+		.carousel-inner img,
+		.our-service-sec img {
+			height: 250px; /* or whatever fixed height works for your layout */
+			width: 100%;
+			object-fit: cover;
+		}
+		.carousel-inner {
+			height: 250px;
+		}
+		.hero-section {
+			background: url('./images/back.jpg') center/cover no-repeat;
+			color: black;
+			display: flex;
+			align-items: flex-end;
+			justify-content: flex-end;
+			height: 50vh;
+			padding: 20px;
+		}
+		.hero-section h1 {
+			font-size: 3rem;
+		}
+		.hero-content {
+			background: #fdffef;
+			padding: 20px;
+			box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+			max-width: 70%;
+			text-align: left;
+			border-radius: 20px;
+		}
+		.hero-content h1 {
+			font-size: 3rem;
+			margin-bottom: 15px;
+		}
+		.section-padding {
+			padding: 60px 20px;
+		}
+		.btn-custom {
+			background-color: #fdffef;
+			color: #000;
+			border: 1px solid #000;
+		}
+		.btn-custom:hover {
+			background-color: #000;
+			color: #fdffef;
+		}
+		.border-top-line {
+			border-top: 2px solid #000;
+		}
+		.img-slider img {
+			width: 100%;
+			height: auto;
+		}
+
+		.service-provide-img{
+			max-height: 300px;
+			max-width: 300px;
+			padding: 10px;
+		}
+		.scrolling-wrapper {
+			-webkit-overflow-scrolling: touch;
+			scrollbar-width: none; /* Firefox */
+		}
+		.scrolling-wrapper::-webkit-scrollbar {
+			display: none; /* Chrome/Safari */
+		}
+		.footer {
+			background-color: #333;
+			color: white;
+			padding: 40px 20px;
+		}
+		.footer a {
+			color: #f8f8f8;
+			text-decoration: none;
+		}
+		.footer a:hover {
+			text-decoration: underline;
+		}
+	</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light sticky-top">
+	<div class="container-fluid px-4">
+		<a class="navbar-brand d-flex align-items-center" href="#">
+			<img src="./images/logo.jpeg" alt="Logo" class="me-2" height="40" width="80">
+			<strong>Samruddhi Developers</strong>
+		</a>
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+			<ul class="navbar-nav">
+				<li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+				<li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+				<li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+				<li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+				<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+				<li class="nav-item"><a class="nav-link" href="#more">More</a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+<!-- Home Section -->
+<section class="hero-section" id="home">
+	<div class="hero-content">
+		<h1 style="color: #f5bd05;">Samruddhi Developer</h1>
+		<p>Welcome to Samruddhi Developers where we transform your vision into reality. With a commitment to excellence, integrity, and sustainable development, we provide high-quality residential and commercial real estate solutions that elevate the standard of living and business spaces.</p>
+	</div>
+</section>
+
+<!-- About Section -->
+<section class="section-padding" id="about">
+	<div class="container">
+		<h1 style="color: #f5bd05;">About Us</h1>
+		<p>At Samrudhhi Developers, we believe in more than just construction; we believe in creating spaces that inspire and enhance the lives of those who use them. With years of experience in the real estate industry, we have earned a reputation for excellence, delivering projects on time, within budget, and beyond expectations.</p>
+		<p>Our team of dedicated architects, engineers, and construction experts work tirelessly to ensure every project is built with precision, quality materials, and sustainable practices. From residential homes to commercial complexes, we are committed to creating spaces that reflect innovation, functionality, and style.</p>
+	</div>
+</section>
+
+<!-- Services Section -->
+<section class="section-padding" id="services">
+	<h1 style="color: #f5bd05;">Services We Provide</h1>
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-12 col-md-4 d-flex justify-content-center mb-4">
+				<div class="our-service-sec text-center">
+					<img src="./images/banglow.jpg" alt="Bunglow" class="img-fluid">
+					<h3 style="background-color: #f5bd05; color:#fff">Bunglow</h3>
+				</div>
+			</div>
+			<div class="col-12 col-md-4 d-flex justify-content-center mb-4">
+				<div class="our-service-sec text-center">
+					<img src="./images/joint_venture.jpg" alt="Bunglow" class="img-fluid">
+					<h3 style="background-color: #f5bd05; color:#fff">Joint Venture</h3>
+				</div>
+			</div>
+			<div class="col-12 col-md-4 d-flex justify-content-center mb-4">
+				<div class="our-service-sec text-center">
+					<img src="./images/plot.jpg" alt="Bunglow" class="img-fluid">
+					<h3 style="background-color: #f5bd05; color:#fff">N.A Plots</h3>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Projects Section -->
+<section class="section-padding" id="projects">
+	<div class="container">
+		<h1 style="color: #f5bd05;">Our Projects</h1>
+		<p>At Samrudhhi Developers, we believe in more than just construction; we believe in creating spaces that inspire and enhance the lives of those who use them. With years of experience in the real estate industry, we have earned a reputation for excellence, delivering projects on time, within budget, and beyond expectations.</p>
+		<p>Our team of dedicated architects, engineers, and construction experts work tirelessly to ensure every project is built with precision, quality materials, and sustainable practices. From residential homes to commercial complexes, we are committed to creating spaces that reflect innovation, functionality, and style.</p>
+
+		<div class="row justify-content-center">
+			<div class="col-12 col-md-4 d-flex justify-content-center mb-4">
+				<div class="our-service-sec text-center">
+					<div id="projectCarousel" class="carousel slide" data-bs-ride="carousel">
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<img src=".\images\nere\nere4.jpeg" class="d-block w-100" alt="Project 1">
+							</div>
+							<div class="carousel-item">
+								<img src=".\images\nere\nere1.jpeg" class="d-block w-100" alt="Project 2">
+							</div>
+							<div class="carousel-item">
+								<img src=".\images\nere\nere2.jpeg" class="d-block w-100" alt="Project 3">
+							</div>
+							<div class="carousel-item">
+								<img src=".\images\nere\nere3.jpeg" class="d-block w-100" alt="Project 4">
+							</div>
+						</div>
+						<button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
+							<span class="carousel-control-prev-icon"></span>
+						</button>
+						<button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
+							<span class="carousel-control-next-icon"></span>
+						</button>
+					</div>
+					<h3 style="background-color: #f5bd05; color:#fff">Nere Mulshi</h3>
+				</div>
+			</div>
+
+			<div class="col-12 col-md-4 d-flex justify-content-center mb-4">
+				<div class="our-service-sec text-center">
+					<div id="projectCarousel" class="carousel slide" data-bs-ride="carousel">
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<img src=".\images\thergaon\thergaon3.jpg" class="d-block w-100" alt="Project 1">
+							</div>
+							<div class="carousel-item">
+								<img src=".\images\thergaon\thergaon4.jpeg" class="d-block w-100" alt="Project 2">
+							</div>
+							<div class="carousel-item">
+								<img src=".\images\thergaon\thergaon5.jpeg" class="d-block w-100" alt="Project 3">
+							</div>
+							<!-- <div class="carousel-item">
+								<img src="https://static.wixstatic.com/media/11062b_e67bd83f308e43a0aa1190f582d05e08~mv2.jpg" class="d-block w-100" alt="Project 4">
+							</div> -->
+						</div>
+						<button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
+							<span class="carousel-control-prev-icon"></span>
+						</button>
+						<button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
+							<span class="carousel-control-next-icon"></span>
+						</button>
+					</div>
+					<h3 style="background-color: #f5bd05; color:#fff">Thergaon PCMC</h3>
+				</div>
+			</div>
+
+			<div class="col-12 col-md-4 d-flex justify-content-center mb-4">
+				<div class="our-service-sec text-center">
+					<div id="projectCarousel" class="carousel slide" data-bs-ride="carousel">
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<img src=".\images\wanawadi\wanawdi.jpeg" class="d-block w-100" alt="Project 1">
+							</div>
+							<div class="carousel-item">
+								<img src=".\images\wanawadi\wanawadi1.jpeg" class="d-block w-100" alt="Project 2">
+							</div>
+							<div class="carousel-item">
+								<img src=".\images\wanawadi\wanawadi2.jpeg" class="d-block w-100" alt="Project 3">
+							</div>
+							<div class="carousel-item">
+								<img src=".\images\wanawadi\wanawadi3.jpeg" class="d-block w-100" alt="Project 4">
+							</div>
+						</div>
+						<button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
+							<span class="carousel-control-prev-icon"></span>
+						</button>
+						<button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
+							<span class="carousel-control-next-icon"></span>
+						</button>
+					</div>
+					<h3 style="background-color: #f5bd05; color:#fff">Wanawdi Pune</h3>
+				</div>
+			</div>
+
+			<div class="col-12 col-md-4 d-flex justify-content-center mb-4">
+				<div class="our-service-sec text-center">
+					<div id="projectCarousel" class="carousel slide" data-bs-ride="carousel">
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<img src=".\images\charholi\charholi4.jpeg" class="d-block w-100" alt="Project 1">
+							</div>
+							<div class="carousel-item">
+								<img src=".\images\charholi\charholi1.jpeg" class="d-block w-100" alt="Project 2">
+							</div>
+							<div class="carousel-item">
+								<img src=".\images\charholi\charholi.jpeg" class="d-block w-100" alt="Project 3">
+							</div>
+							
+						</div>
+						<button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
+							<span class="carousel-control-prev-icon"></span>
+						</button>
+						<button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
+							<span class="carousel-control-next-icon"></span>
+						</button>
+					</div>
+					<h3 style="background-color: #f5bd05; color:#fff">Ghotawade, Mulshi</h3>
+				</div>
+			</div>
+
+			<div class="col-12 col-md-4 d-flex justify-content-center mb-4">
+				<div class="our-service-sec text-center">
+					<div id="projectCarousel" class="carousel slide" data-bs-ride="carousel">
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<img src="https://i.pinimg.com/736x/bc/c9/e2/bcc9e26163643898fd80734993be3214.jpg" class="d-block w-100" alt="Project 1">
+							</div>
+							<div class="carousel-item">
+								<img src="https://i.pinimg.com/736x/36/43/1f/36431f8c7b7ccb3c14d1fe1552312673.jpg" class="d-block w-100" alt="Project 2">
+							</div>
+							<div class="carousel-item">
+								<img src="https://i.pinimg.com/736x/14/a3/81/14a38135709d12da9e5aa5d5c1cc2135.jpg" class="d-block w-100" alt="Project 3">
+							</div>
+							<div class="carousel-item">
+								<img src="https://i.pinimg.com/736x/be/d4/1f/bed41f48be9293d464999d00ac6a074f.jpg" class="d-block w-100" alt="Project 4">
+							</div>
+						</div>
+						<button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
+							<span class="carousel-control-prev-icon"></span>
+						</button>
+						<button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
+							<span class="carousel-control-next-icon"></span>
+						</button>
+					</div>
+					<h3 style="background-color: #f5bd05; color:#fff">Temples in society</h3>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+</section>
+
+<!-- Our Story Section -->
+<section class="section-padding border-top-line" id="more">
+	<div class="container">
+		<div class="row align-items-center">
+			<div class="col-md-6">
+				<img src="https://img.freepik.com/free-photo/family-spending-time-together-home_23-2149038325.jpg" alt="Our Story Image" height="200px" width="200px">
+			</div>
+			<div class="col-md-6">
+				<h1 style="color: #f5bd05;">Who We Are</h1>
+				<p>Samrudhhi Developers is dedicated to crafting unique living experiences through innovative real estate projects. With a focus on excellence and customer satisfaction, we aim to create exceptional spaces that harmoniously blend modernity with comfort and style. Our commitment to quality and integrity drives us to deliver homes that exceed expectations.</p>
+				<button class="btn btn-custom">Read More</button>
+			</div>
+		</div>
+		<div class="container" style="margin-top: 60px;">
+			<div class="row justify-content-center">
+				<div class="col-12 col-md-4 d-flex justify-content-center mb-4">
+					<div class="our-service-sec text-center">
+						<img src=".\images\girish.jpeg" alt="Bunglow" class="img-fluid">
+						<div>
+							<h3 style="background-color: #f5bd05; color:#fff">Mr. Girish Khatal</h3>
+							<h3 style="background-color: #f5bd05; color:#fff">Director</h3>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-12 col-md-4 d-flex justify-content-center mb-4">
+					<div class="our-service-sec text-center">
+						<img src=".\images\rushikesh.jpeg" alt="Bunglow" class="img-fluid">
+						<div>
+							<h3 style="background-color: #f5bd05; color:#fff">Mr. Rushikesh Kalate</h3>
+							<h3 style="background-color: #f5bd05; color:#fff">Director</h3>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-12 col-md-4 d-flex justify-content-center mb-4">
+					<div class="our-service-sec text-center">
+						<img src=".\images\prathmesh.jpeg" alt="Bunglow" class="img-fluid">
+						<div>
+							<h3 style="background-color: #f5bd05; color:#fff">Mr. Prathmesh Kalate</h3>
+							<h3 style="background-color: #f5bd05; color:#fff">Architect</h3>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-12 col-md-4 d-flex justify-content-center mb-4">
+					<div class="our-service-sec text-center">
+						<img src=".\images\yogesh.jpeg" alt="Bunglow" class="img-fluid"/>
+						<div>
+							<h3 style="background-color: #f5bd05; color:#fff">Mr. Yogesh Khatal</h3>
+							<h3 style="background-color: #f5bd05; color:#fff">Director</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="contact" class="bg-light py-5">
+	<div class="container">
+		<h2 class="text-center mb-4" style="color: #f5bd05;">Contact Us</h2>
+		<div class="row">
+
+			<!-- Contact Info -->
+			<div class="col-md-6 mb-4">
+				<h5><i class="bi bi-envelope-fill"></i> Email:</h5>
+				<p><a href="mailto:sales@samruddhideveloper.in">sales@samruddhideveloper.in</a></p>
+
+				<h5><i class="bi bi-telephone-fill"></i> Phone:</h5>
+				<p><a href="tel:+919876543210">+91 9021755006</a></p>
+
+				<h5><i class="bi bi-geo-alt-fill"></i> Address:</h5>
+				<p>174/3/1, datta madir raod, Wakad Mulshi Pune 411057, Maharashtra, India</p>
+			</div>
+
+			<!-- Google Map -->
+			<div class="col-md-6">
+				<iframe 
+				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d945.345589170776!2d73.76221207568518!3d18.601864267131866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b96e23a58421%3A0xaa930787dd63c265!2sMark%201%20Rd%2C%20Shankar%20Kalat%20Nagar%2C%20Wakad%2C%20Pimpri-Chinchwad%2C%20Maharashtra%20411057!5e0!3m2!1sen!2sin!4v1744670638238!5m2!1sen!2sin" 
+				width="100%" 
+				height="300" 
+				style="border:0;" 
+				allowfullscreen="" 
+				loading="lazy" 
+				referrerpolicy="no-referrer-when-downgrade">
+			</iframe>
+		</div>
+
+	</div>
+</div>
+</section>
+
+
+<footer class="footer">
+	<div class="container text-center">
+		<p>&copy; 2025 Samruddhi Developers. All rights reserved.</p>
+		<p>
+			<a href="#home">Home</a> |
+			<a href="#about">About</a> |
+			<a href="#services">Services</a> |
+			<a href="#projects">Projects</a> |
+			<a href="#contact">Contact</a> |
+			<a href="#more">More</a>
+		</p>
+	</div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
